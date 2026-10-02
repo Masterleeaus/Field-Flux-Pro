@@ -1,3 +1,5 @@
+![Titan Zero PHP Modules Archive — PHP MODULES · LINEAGE REVIEW](docs/images/portfolio-banner.svg)
+
 <div align="center">
 
 # Titan Zero PHP Modules Archive
