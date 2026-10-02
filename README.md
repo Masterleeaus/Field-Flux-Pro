@@ -1,6 +1,6 @@
 <div align="center">
 
-# Titanzero
+# Titan Zero PHP Modules Archive
 
 **A PHP codebase exploring Titan Zero services and platform components.**
 
