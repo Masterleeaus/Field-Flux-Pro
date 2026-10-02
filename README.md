@@ -8,6 +8,13 @@
 
 </div>
 
+## Product architecture and engineering highlights
+
+A Laravel AI-assistant module that combines agent actions with guided workflows, visual canvases, evaluation, and platform administration.
+
+- **Architecture:** The module is divided into AI, Actions, Blueprints, Canvas, Evaluation, Wizards, HTTP, Jobs, Services, and persistence layers, with a Laravel module manifest and provider integration.
+- **Distinctive engineering:** Distinctive capabilities in the source include standards-grounded assistance, agent evaluation, circuit breakers, tool-invocation records, guided workflows, and cross-tenant architecture tests.
+
 > **Status: exploratory repository; relationship to the canonical platform unverified.** The inspected default branch contains PHP source directories including AI, actions, contracts, database, events, HTTP, and integration-related components. No dependency manifest or automated verification command was identified in the root inventory.
 
 ## Relationship to the active product
