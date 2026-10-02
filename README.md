@@ -34,4 +34,5 @@ A Composer manifest, supported installation workflow, test command, license, and
 
 ## Banner
 
-No verified project-specific banner was found during this review.
+A checked-in project-specific banner is displayed above.
+
