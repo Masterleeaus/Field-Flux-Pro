@@ -1,10 +1,10 @@
-![Field-Flux-Pro — exploratory Laravel AI-assistant module with actions, guided workflows, canvases, evaluation, and HTTP surfaces](docs/images/field-flux-pro-banner.svg)
+![Field-Flux-Pro — Titan Zero Laravel AI modules for service workflows](docs/images/field-flux-pro-banner.svg)
 
 <div align="center">
 
-# Field-Flux-Pro — Titan Zero PHP Modules Archive
+# Field-Flux-Pro
 
-**Tenant-aware Laravel AI modules for service workflows**
+**Titan Zero Laravel AI modules for service workflows**
 
 </div>
 
