@@ -1,4 +1,4 @@
-![Titan Zero PHP Modules Archive — PHP MODULES · LINEAGE REVIEW](docs/images/portfolio-banner.svg)
+![Titan Zero PHP Modules Archive — PHP MODULES · LINEAGE REVIEW](docs/images/titanzero-banner.svg)
 
 <div align="center">
 
@@ -9,6 +9,10 @@
 </div>
 
 ## Product architecture and engineering highlights
+
+<p align="center">
+  <img src="docs/images/titanzero-architecture.svg" alt="Titan Zero PHP Modules Archive flow from AI and citations through actions, guided workflows, evaluation, and platform services" width="100%" />
+</p>
 
 A Laravel AI-assistant module that combines agent actions with guided workflows, visual canvases, evaluation, and platform administration.
 
