@@ -43,3 +43,7 @@ A Composer manifest, supported installation workflow, test command, license, and
 
 A checked-in project-specific banner is displayed above.
 
+
+## Engineering guide
+
+See [docs/PORTFOLIO.md](docs/PORTFOLIO.md) for the repository-specific code map, quickstart, evidence boundaries, and limitations.
