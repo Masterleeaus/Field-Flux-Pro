@@ -45,7 +45,7 @@ Focused evidence includes:
 
 ## Host integration
 
-The repository root contains a module `composer.json` for `workdo/aiassistant` with the `Modules\\\\TitanZero\\\\` PSR-4 mapping and `orhanerday/open-ai` dependency. It is intended for a host Laravel application rather than a standalone product:
+The repository root contains a module `composer.json` for `workdo/aiassistant` with the `Modules\\TitanZero\\` PSR-4 mapping and `orhanerday/open-ai` dependency. It is intended for a host Laravel application rather than a standalone product:
 
 ```bash
 composer install
