@@ -8,7 +8,44 @@
 
 </div>
 
+## Overview
+
 Field-Flux-Pro contains the Titan Zero PHP/Laravel module set for AI-assisted service workflows. It brings agent actions, standards-grounded assistance, circuit protection, visual workflows, evaluation, and platform administration into a Laravel module boundary.
+
+
+## Measured evidence
+
+Field-Flux-Pro has a bounded but useful source-level verification surface around evaluation, tenant safety and resilience.
+
+| Focused test file | Test methods present | What it covers |
+| --- | ---: | --- |
+| `Tests/Feature/EvaluationScoringTest.php` | **4** | persisted scores, tenant scoping, hallucination penalty and score bounds |
+| `Tests/Architecture/CrossTenantArchitectureTest.php` | **15** | required control classes, cross-tenant mismatch rejection and company-scoped entities |
+| `Tests/Feature/CircuitBreakerIntegrationTest.php` | **3** | sustained-failure trip, success path and single-event behavior after opening |
+| Focused methods across these files | **22** | evaluation + tenant + resilience evidence |
+
+This is **source and test-structure evidence**, not a clean-checkout result. The repository is a host Laravel module/archive and this pass did not establish a synchronized lockfile, installed host or green full suite.
+
+## What is new
+
+The module's technical signature is an **inspectable AI service layer where evaluation, invocation logging, tenant scope and circuit protection are separate persisted concerns**.
+
+```text
+Agent / workflow request
+       ↓
+Company-scoped action path
+       ↓
+Tool invocation
+       ├── invocation log
+       ├── circuit state
+       └── workflow evidence
+       ↓
+Result
+       ↓
+Agent evaluation record
+```
+
+That makes AI behavior easier to audit than a single opaque conversation transcript: evaluation scores, tool hashes/durations, tenant identifiers, circuit events and workflow runs have explicit implementation surfaces.
 
 The strongest portfolio value is the way the module makes AI behavior inspectable: prompts and tools sit beside action code, tenant boundaries are represented in models and tests, and agent quality is recorded as evaluation data rather than treated as an invisible chat response.
 
@@ -16,7 +53,7 @@ The strongest portfolio value is the way the module makes AI behavior inspectabl
   <img src="docs/images/field-flux-pro-architecture.svg" alt="Field-Flux-Pro source map from AI and actions through guided work and evaluation to HTTP, jobs, services, and persistence layers." width="100%" />
 </p>
 
-## Implemented capabilities
+## Verified capabilities
 
 - **Agent evaluation:** `Evaluation/AgentEvaluator.php` scores task completion, tool accuracy, response latency, and a weighted composite; its hallucination flag uses caller-supplied forbidden strings and response heuristics before persisting `company_id`, agent, session, and response snapshot.
 - **Tenant and action safety:** `Tests/Architecture/CrossTenantArchitectureTest.php` checks the CrossTenantGuard, ToolInvocationLogger, evaluation entities, circuit breaker, and workflow classes; it also asserts cross-tenant mismatch rejection and company-scoped fillable fields.
@@ -37,7 +74,7 @@ The strongest portfolio value is the way the module makes AI behavior inspectabl
 | `Http/`, `Jobs/`, `Events/` | Request paths, asynchronous work, and domain events. |
 | `Tests/` | Architecture, unit, feature, and contract-oriented verification. |
 
-## Evidence you can inspect
+## Reproducible verification
 
 Focused evidence includes:
 
@@ -47,7 +84,7 @@ Focused evidence includes:
 - `Tests/Architecture/CrossTenantArchitectureTest.php` for architecture and tenant invariants.
 - `Tests/Feature/StandardsGroundedAssistTest.php` for standards-grounded assistance routing.
 
-## Host integration
+## Installation and host integration
 
 The repository root contains a module `composer.json` for `workdo/aiassistant` with the `Modules\\TitanZero\\` PSR-4 mapping and `orhanerday/open-ai` dependency. It is intended for a host Laravel application rather than a standalone product:
 
