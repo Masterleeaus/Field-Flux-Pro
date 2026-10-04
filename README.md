@@ -14,7 +14,7 @@ The strongest portfolio value is the way the module makes AI behavior inspectabl
 
 ## Implemented capabilities
 
-- **Agent evaluation:** `Evaluation/AgentEvaluator.php` scores task completion, hallucination flags, tool accuracy, response latency, and a weighted composite, then persists the result with `company_id`, agent, session, and response snapshot.
+- **Agent evaluation:** `Evaluation/AgentEvaluator.php` scores task completion, tool accuracy, response latency, and a weighted composite; its hallucination flag uses caller-supplied forbidden strings and response heuristics before persisting `company_id`, agent, session, and response snapshot.
 - **Tenant and action safety:** `Tests/Architecture/CrossTenantArchitectureTest.php` checks the CrossTenantGuard, ToolInvocationLogger, evaluation entities, circuit breaker, and workflow classes; it also asserts cross-tenant mismatch rejection and company-scoped fillable fields.
 - **Invocation observability:** `Services/ToolInvocationLogger.php` records company, agent, tool, parameter/result hashes, and duration for tool calls.
 - **Resilient workflows:** `Services/CircuitBreaker/CircuitBreakerService.php` and its integration tests model failure windows and tripping behavior around provider or action paths.
