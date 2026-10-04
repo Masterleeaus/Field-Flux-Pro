@@ -27,13 +27,13 @@ The cross-tenant tests cover same-company success, mismatched-company rejection,
 
 ## Quickstart and verification
 
-The checked-in `composer.json` declares PSR-4 autoloading for `Modules\\\\TitanZero\\\\` and the `orhanerday/open-ai` dependency:
+The checked-in `composer.json` declares PSR-4 autoloading for `Modules\TitanZero\` and the `orhanerday/open-ai` dependency:
 
 ```bash
 composer install
 ```
 
-This is a module, not a standalone application. A Laravel host/module loader is required for `module_path()`, database migrations, Filament, `RefreshDatabase`, and the `Tests\\\\TestCase` feature tests. No root PHPUnit configuration or test script was verified, so a host command such as `php artisan test` must be supplied by the integrating application rather than invented here.
+This is a module, not a standalone application. A Laravel host/module loader is required for `module_path()`, database migrations, Filament, `RefreshDatabase`, and the `Tests\TestCase` feature tests. No root PHPUnit configuration or test script was verified, so a host command such as `php artisan test` must be supplied by the integrating application rather than invented here.
 
 ## Evidence and known gaps
 
