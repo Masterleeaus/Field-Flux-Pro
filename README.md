@@ -2,13 +2,13 @@
 
 <div align="center">
 
-# Titanzero
+# Field-Flux-Pro — Titan Zero PHP Modules Archive
 
-**PHP Modules Archive**
+**Tenant-aware Laravel AI modules for service workflows**
 
 </div>
 
-Titanzero is a PHP/Laravel module set for AI-assisted service workflows. It brings agent actions, standards-grounded assistance, circuit protection, visual workflows, evaluation, and platform administration into a nWidart-style module boundary.
+Field-Flux-Pro contains the Titan Zero PHP/Laravel module set for AI-assisted service workflows. It brings agent actions, standards-grounded assistance, circuit protection, visual workflows, evaluation, and platform administration into a Laravel module boundary.
 
 The strongest portfolio value is the way the module makes AI behavior inspectable: prompts and tools sit beside action code, tenant boundaries are represented in models and tests, and agent quality is recorded as evaluation data rather than treated as an invisible chat response.
 
@@ -45,7 +45,7 @@ Focused evidence includes:
 
 ## Host integration
 
-The repository root contains a module `composer.json` for `workdo/aiassistant` with the `Modules\\TitanZero\\` PSR-4 mapping and `orhanerday/open-ai` dependency. It is intended for a host Laravel application rather than a standalone product:
+The repository root contains a module `composer.json` for `workdo/aiassistant` with the `Modules\\\\TitanZero\\\\` PSR-4 mapping and `orhanerday/open-ai` dependency. It is intended for a host Laravel application rather than a standalone product:
 
 ```bash
 composer install
@@ -56,6 +56,6 @@ These commands are source-described integration steps; a synchronized lockfile a
 
 ## Scope and provenance
 
-Treat Titanzero as an exploratory module/archive until its lineage, dependency policy, and relationship to [Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) are independently reconciled. The `composer.json` identifies the package as `workdo/aiassistant` and names WorkDo as author; preserve that attribution and do not present the repository as unqualified original work.
+Treat Field-Flux-Pro as an exploratory module/archive until its lineage, dependency policy, and relationship to [Titan Zero Field Service Workforce](https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce) are independently reconciled. The `composer.json` identifies the package as `workdo/aiassistant` and names WorkDo as author; preserve that attribution and do not present the repository as unqualified original work.
 
 The code demonstrates real AI/platform integration patterns, but this README does not claim a current production release, clean-checkout test pass, or universal capability across every retained artifact.
