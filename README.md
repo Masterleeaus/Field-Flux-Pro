@@ -1,4 +1,4 @@
-![Titan Zero PHP Modules Archive — PHP MODULES · LINEAGE REVIEW](docs/images/titanzero-banner.svg)
+![Field-Flux-Pro — exploratory Laravel AI-assistant module with actions, guided workflows, canvases, evaluation, and HTTP surfaces](docs/images/field-flux-pro-banner.svg)
 
 <div align="center">
 
@@ -11,6 +11,10 @@
 Field-Flux-Pro contains the Titan Zero PHP/Laravel module set for AI-assisted service workflows. It brings agent actions, standards-grounded assistance, circuit protection, visual workflows, evaluation, and platform administration into a Laravel module boundary.
 
 The strongest portfolio value is the way the module makes AI behavior inspectable: prompts and tools sit beside action code, tenant boundaries are represented in models and tests, and agent quality is recorded as evaluation data rather than treated as an invisible chat response.
+
+<p align="center">
+  <img src="docs/images/field-flux-pro-architecture.svg" alt="Field-Flux-Pro source map from AI and actions through guided work and evaluation to HTTP, jobs, services, and persistence layers." width="100%" />
+</p>
 
 ## Implemented capabilities
 
